@@ -52,5 +52,26 @@
     </div>
     <!-- Add more items as needed -->
   </div>
+<div id="lightbox-overlay">
+  <img src="" alt="Expanded Image">
+</div>
+
+  <script>
+    const overlay = document.getElementById("lightbox-overlay");
+    const overlayImg = overlay.querySelector("img");
+
+    document.querySelectorAll(".lightbox-link").forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        overlayImg.src = this.href;
+        overlay.style.display = "flex";
+      });
+    });
+
+    overlay.addEventListener("click", () => {
+      overlay.style.display = "none";
+      overlayImg.src = "";
+    });
+  </script>
 </body>
 </html>
