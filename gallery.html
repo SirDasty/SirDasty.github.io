@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery – Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+    .gallery-item {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 10px;
+      text-align: center;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      border-radius: 6px;
+      height: auto;
+    }
+    .gallery-item p {
+      margin-top: 0.5rem;
+      font-size: 0.95em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Gallery</h1>
+    <p>A collection of work and moments</p>
+    <a href="index.html" class="button">← Back to Resume</a>
+  </header>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="img1.jpg" alt="Project 1">
+      <p>Project 1 – Web design for client X</p>
+    </div>
+    <div class="gallery-item">
+      <img src="img2.jpg" alt="Workshop">
+      <p>Giving a talk on Front-End Development</p>
+    </div>
+    <div class="gallery-item">
+      <img src="img3.jpg" alt="Event">
+      <p>Attending the WebDev Conference 2024</p>
+    </div>
+    <!-- Add more items as needed -->
+  </div>
+</body>
+</html>
