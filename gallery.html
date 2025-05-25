@@ -28,6 +28,26 @@
       font-size: 0.95em;
       color: #333;
     }
+    /* Lightbox container */
+  #lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  #lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 4px solid white;
+    border-radius: 8px;
+  }
   </style>
 </head>
 <body>
