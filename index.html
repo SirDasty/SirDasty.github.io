@@ -11,6 +11,8 @@
 
         /* Hlavní horní pruh */
         .top-bar {
+            display: flex;
+            align-items: center;
             height: 120px;
             background-color: #1e3a8a; /* hlavní barva */
             color: white;
@@ -18,28 +20,25 @@
 
         /* Levý a pravý menší pruh */
         .side-bar {
-            width: 65px;
+            width: 80px;
             height: 100%;
         }
 
         .left {
-            left: 0;
             background-color: #ef4444; /* červený */
         }
 
         .right {
-            right: 0;
             background-color: #22c55e; /* zelený */
         }
 
-        /* Text přesně uprostřed obrazovky */
+        /* Text uprostřed */
         .center-text {
-            position: absolute;
-            top: 50%;
+            flex: 1;
             left: 50%;
-            font-size: 32px;
+            right: 50%;
+            font-size: 40px;
             font-weight: bold;
-            white-space: nowrap;
         }
     </style>
 </head>
@@ -49,7 +48,7 @@
         <div class="side-bar left"></div>
         <div class="side-bar right"></div>
         <div class="center-text">
-            Ministry of Defence ORBAT
+            NMinisty of Defence ORBAT
         </div>
     </div>
 
