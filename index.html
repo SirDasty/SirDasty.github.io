@@ -11,33 +11,39 @@
 
         /* Hlavní horní pruh */
         .top-bar {
-            display: flex;
-            text-align: center;
+            position: relative;
             height: 120px;
-            background-color: #cc0000; /* hlavní barva */
+            background-color: #1e3a8a; /* hlavní barva */
             color: white;
         }
 
         /* Levý a pravý menší pruh */
         .side-bar {
-            width: 65px;
+            position: absolute;
+            top: 0;
+            width: 80px;
             height: 100%;
         }
 
         .left {
-            background-color: #1e3a8a; /* červený */
+            left: 0;
+            background-color: #ef4444; /* červený */
         }
 
         .right {
-            background-color: #ffffff; /* bílý */
+            right: 0;
+            background-color: #22c55e; /* zelený */
         }
 
-        /* Text uprostřed */
+        /* Text přesně uprostřed obrazovky */
         .center-text {
-            flex: 1;
-            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-size: 32px;
             font-weight: bold;
+            white-space: nowrap;
         }
     </style>
 </head>
